@@ -1,16 +1,16 @@
 ﻿// Напишите программу, которая выводит случайное трёх значное число и удаляет вторую цифру этого числа.
-int number = RandomInt(100,1000);
+int number = RandomInt(100, 1000);
 
 int RandomInt(int a, int b)
 {
-    return new Random().Next(a,b);
+    return new Random().Next(a, b);
 }
 Console.WriteLine(number);
 int Total(int number)
 {
-    int a = number/100; // int a 516/100 = 5
+    int a = number / 100; // int a 516/100 = 5
     int c = number % 10;// int c 516 % 10 = 6
-    int b = a*10+c;
+    int b = a * 10 + c;
     return b;
 }
 
@@ -21,20 +21,20 @@ int Div3(int a)
 }
 
 int Div2(int a)
-{ 
-    int b = a/10;
-    int c = b%10;
+{
+    int b = a / 10;
+    int c = b % 10;
     return c;
 }
 
 int Div1(int a)
 {
-    int b = a/100;
+    int b = a / 100;
     return b;
 }
 
 
-void Plus(int a,int b) // Функция склеивания двух значений.
+void Plus(int a, int b) // Функция склеивания двух значений.
 {
     Console.WriteLine(Convert.ToString(a) + Convert.ToString(b));
 }
@@ -49,3 +49,12 @@ Console.WriteLine(Total(number)); // Одна функция на всё реш�
 Console.WriteLine(Convert.ToString(Div1(number)) + Convert.ToString(Div3(number))); // Решение через "склеивание" переменных в string.
 
 Plus((Div1(number)), (Div3(number)));
+
+// Решение задачи с помощью строки.
+// string - это массив из отдельных символов. 
+// А символ - это тип данных char.
+
+Console.WriteLine("");
+Console.WriteLine(number);
+string stringNumber = Convert.ToString(number);
+Console.Write(stringNumber[0] + " " + stringNumber[1] + " " + stringNumber[2]);

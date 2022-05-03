@@ -32,6 +32,14 @@ int Div1(int a)
     int b = a/100;
     return b;
 }
+
+
+void Plus(int a,int b) // Функция склеивания двух значений.
+{
+    Console.WriteLine(Convert.ToString(a) + Convert.ToString(b));
+}
+
+
 Console.Write(Div1(number));
 // Console.WriteLine(Div2(number));
 Console.WriteLine(Div3(number));
@@ -39,3 +47,5 @@ Console.WriteLine(Div3(number));
 Console.WriteLine(Total(number)); // Одна функция на всё решение.
 
 Console.WriteLine(Convert.ToString(Div1(number)) + Convert.ToString(Div3(number))); // Решение через "склеивание" переменных в string.
+
+Plus((Div1(number)), (Div3(number)));

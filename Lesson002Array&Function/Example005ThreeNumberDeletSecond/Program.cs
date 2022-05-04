@@ -57,4 +57,5 @@ Plus((Div1(number)), (Div3(number)));
 Console.WriteLine("");
 Console.WriteLine(number);
 string stringNumber = Convert.ToString(number);
-Console.Write(stringNumber[0] + " " + stringNumber[1] + " " + stringNumber[2]);
+Console.WriteLine(stringNumber[0] + " " + stringNumber[1] + " " + stringNumber[2]);
+Console.Write($"{stringNumber[0]}{stringNumber[2]}"); #

@@ -10,8 +10,8 @@ Console.Write("X: ");
 int x = Convert.ToInt32(Console.ReadLine());
 Console.Write("Y: ");
 int y = Convert.ToInt32(Console.ReadLine());
-// Int.MaxValue Максимальное значение int.
-// Int.MinValue Минимальное значение int.
+// int.MaxValue Максимальное значение int.
+// int.MinValue Минимальное значение int.
 if (x == 0 || y == 0) // Две палочки || - оператор "или".
 {
     Console.WriteLine("error");

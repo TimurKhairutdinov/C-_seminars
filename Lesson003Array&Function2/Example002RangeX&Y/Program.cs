@@ -1,6 +1,6 @@
 ﻿// Напишите программу, которая по заданному номеру четверти, 
 //  показывает диапазон возможных координат точек в этой четверти (x & y).
-Console.Write("Введите номер четверти: ");
+Console.Write("Введите номер четверти от 1 до 4: ");
 int quarter = Convert.ToInt32(Console.ReadLine());
 int min = int.MinValue;
 int max = int.MaxValue;

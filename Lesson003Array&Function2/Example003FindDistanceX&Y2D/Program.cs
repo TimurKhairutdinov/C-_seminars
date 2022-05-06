@@ -3,15 +3,17 @@
 
 */
 
-Console.Write("Введите X первой точки: ");
-int xA = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите Y первой точки: ");
-int yA = Convert.ToInt32(Console.ReadLine());
+int xA = Coordinate("x", "A"); 
+int yA = Coordinate("y", "A"); 
+int xB = Coordinate("x", "B"); 
+int yB = Coordinate("y", "B"); 
 
-Console.Write("Введите X второй точки: ");
-int xB = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите Y второй точки: ");
-int yB = Convert.ToInt32(Console.ReadLine());
+int Coordinate(string coorName, string pointName)
+{
+    Console.Write($"Введите координату {coorName} точки {pointName}: ");
+    return Convert.ToInt16(Console.ReadLine());
+}
+
 
 
 int xC = xA;

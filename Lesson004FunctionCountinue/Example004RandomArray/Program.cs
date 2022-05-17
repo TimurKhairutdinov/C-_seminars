@@ -12,7 +12,7 @@ for (int i = 0; i < randomArr.Length; i++)
     if (i < randomArr.Length - 1) 
         {
             Console.Write(",");
-        }
+        } 
 }
 
 Console.WriteLine();

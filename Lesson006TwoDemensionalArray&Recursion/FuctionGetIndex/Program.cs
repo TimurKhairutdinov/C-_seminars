@@ -6,3 +6,4 @@
     }
     return currentIndex;
 }
+GetIndex(0,10);
